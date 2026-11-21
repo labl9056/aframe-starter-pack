@@ -5,11 +5,24 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-assets>
+        <a-asset-item id="waterTower" src="Assets/Trial.gltf"></a-asset-item>
+        <a-asset-item id="mysteryShack" src="Assets/Mystery Shack.gltf"></a-asset-item>
+        <a-asset-item id="stansCar" src="Assets/Stan's Car.gltf"></a-asset-item>
+         <a-asset-item id="golfCart" src="Assets/Golf Cart.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#waterTower" position="4 3 -5" rotation = "-90 0 0" scale="20 20 20"></a-entity>
+      <a-entity gltf-model="#mysteryShack" position="-2.75 0.25 -4" rotation = "0 0 0" scale="12 12 12"></a-entity>
+      <a-entity gltf-model="#stansCar" position="4 0 -1.5" rotation = "0 0 0" scale="10 10 10"></a-entity>
+      <a-entity gltf-model="#golfCart" position="4 0.2 -3" rotation = "0 0 0" scale="10 10 10"></a-entity>
+      
+      <a-entity gltf-model="#mysteryShack" position="-2.75 -0.25 -4" rotation = "-180 180 0" scale="10 10 10"></a-entity>
+<a-plane position="0 0 -4" rotation="90 90 90" width="12" height="8" color="green"></a-plane>   
+      <a-plane src="Assets/parking lot.jpg" position="0 0 -4" rotation="-90 0 0" width="12" height="8"></a-plane>
+      <a-sky src="Assets/bill.jpg" radius="10"></a-sky>
+      <a-box position="-4 0.5 -4" scale="0.5 0.5 0.5" src="Assets/schmebulock.gif"></a-box>
+      <a-sky color="black" radius="30"></a-sky>
     </a-scene>
   </body>
 </html>
